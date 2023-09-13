@@ -20,7 +20,7 @@ impl Store {
     }
 }
 
-#[derive(Debug, Serialize)]
+#[derive(Debug, Serialize, Clone, PartialEq, Eq, Hash)]
 struct QuestionId(String);
 
 #[derive(Debug, Serialize)]
